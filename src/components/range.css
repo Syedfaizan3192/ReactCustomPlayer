@@ -1,0 +1,7 @@
+.audio-player-progress input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 2px;
+  border-radius: 2px;
+}
+/*# sourceMappingURL=range.css.map */

@@ -1,0 +1,148 @@
+// /*
+// // Styling Cross-Browser Compatible Range Inputs with Sass
+// // Github: https://github.com/darlanrod/input-range-sass
+// // Author: Darlan Rod https://github.com/darlanrod
+// // Version 1.4.1
+// // MIT License
+// */
+
+$track-color: black;
+$track-check: yellow;
+$thumb-color: #ff0000;
+
+$thumb-radius: 12px;
+$thumb-height: 12px;
+$thumb-width: 12px;
+$thumb-shadow-size: 0;
+$thumb-shadow-blur: 0;
+$thumb-shadow-color: #111;
+$thumb-border-width: 0;
+$thumb-border-color: #fff;
+
+$track-width: 100%;
+$track-height: 10px;
+$track-shadow-size: 0;
+$track-shadow-blur: 0;
+$track-shadow-color: #222;
+$track-border-width: 0;
+$track-border-color: #000;
+$track-color-lite: #add8e6;
+$track-radius: 5px;
+$contrast: 5%;
+
+// @mixin shadow($shadow-size, $shadow-blur, $shadow-color) {
+//   box-shadow: $shadow-size $shadow-size $shadow-blur $shadow-color, 0 0 $shadow-size lighten($shadow-color, 5%);
+// }
+
+// @mixin track {
+//   cursor: pointer;
+//   height: $track-height;
+//   transition: all 0.2s ease;
+//   width: $track-width;
+// }
+
+// @mixin thumb {
+//   @include shadow($thumb-shadow-size, $thumb-shadow-blur, $thumb-shadow-color);
+//   background: $thumb-color;
+//   border: $thumb-border-width solid $thumb-border-color;
+//   border-radius: $thumb-radius;
+//   cursor: pointer;
+//   height: $thumb-height;
+//   width: $thumb-width;
+// }
+
+// [type=range] {
+//   -webkit-appearance: none;
+//   margin: $thumb-height / 2 0;
+//   width: $track-width;
+//   background-color: $track-check;
+
+//   &:focus {
+//     outline: 0;
+//     background-color: $track-check;
+//     //faizan
+
+//     // &::-webkit-slider-runnable-track {
+//     //   background: lighten($track-color, $contrast);
+//     // }
+
+//     &::-ms-fill-lower {
+//       background: yellow;
+//     }
+
+//     &::-ms-fill-upper {
+//       background: yellow;
+//     }
+//   }
+
+//   &::-webkit-slider-runnable-track {
+//     @include track;
+//     @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+//     background: $track-check;
+//     border: $track-border-width solid $track-border-color;
+//     border-radius: $track-radius;
+//   }
+
+//   &::-webkit-slider-thumb {
+//     @include thumb;
+//     -webkit-appearance: none;
+//     margin-top: ((-$track-border-width * 2 + $track-height) / 2) - ($thumb-height / 2);
+//   }
+
+//   // &::-moz-range-track {
+//   //   @include track;
+//   //   @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+//   //   background: $track-color-lite;
+//   //   border: $track-border-width solid $track-color-lite;
+//   //   border-radius: $track-radius;
+//   // }
+
+//   &::-moz-range-thumb {
+//     @include thumb;
+//   }
+
+//   &::-ms-track {
+//     @include track;
+//     background: yellow;
+//     border-color: transparent;
+//     border-width: ($thumb-height / 2) 0;
+//     color: transparent;
+//   }
+
+//   // &::-ms-fill-lower {
+//   //   @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+//   //   background: yellow;
+//   //   border: $track-border-width solid $track-border-color;
+//   //   border-radius: $track-radius * 2;
+//   // }
+
+//   // &::-ms-fill-upper {
+//   //   @include shadow($track-shadow-size, $track-shadow-blur, $track-shadow-color);
+//   //   background: $track-color-lite;
+//   //   border: $track-border-width solid $track-border-color;
+//   //   border-radius: $track-radius * 2;
+//   // }
+
+//   // &::-ms-thumb {
+//   //   @include thumb;
+//   //   margin-top: 0;
+//   // }
+// }
+
+// input[type=range] {
+//   width:100%;
+//   -webkit-appearance: none;
+//   height: 2px;
+//   background: linear-gradient(to right, #ffffff 50%, grey 50%);
+// }
+
+// Faizan
+.audio-player-progress {
+    input[type="range"] {
+        width: 100%;
+        -webkit-appearance: none;
+        height: 2px;
+        border-radius: 2px;
+        // background: linear-gradient(to right, blue 50%, blue 50%);
+    }
+}

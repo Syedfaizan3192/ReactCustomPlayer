@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AA2IA,AACI,sBADkB,CAClB,KAAK,CAAA,AAAA,IAAC,CAAK,OAAO,AAAZ,EAAc;EAChB,KAAK,EAAE,IAAI;EACX,kBAAkB,EAAE,IAAI;EACxB,MAAM,EAAE,GAAG;EACX,aAAa,EAAE,GAAG;CAErB",
+    "sources": [
+        "range.scss"
+    ],
+    "names": [],
+    "file": "range.css"
+}
